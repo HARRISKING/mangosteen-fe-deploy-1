@@ -40,7 +40,7 @@ export class Http {
 const mock = (response: AxiosResponse) => {
   if (
     true ||
-    (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.hostname !== '192.168.3.57')
+    (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.hostname !== '81.68.207.105')
   ) {
     return false
   }
@@ -74,7 +74,7 @@ const mock = (response: AxiosResponse) => {
 }
 
 function isDev() {
-  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.hostname !== '192.168.3.57') {
+  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.hostname !== '81.68.207.105') {
     return false
   }
   return true
