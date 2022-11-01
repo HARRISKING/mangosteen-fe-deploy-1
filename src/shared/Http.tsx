@@ -80,7 +80,8 @@ function isDev() {
   return true
 }
 
-export const http = new Http(isDev() ? 'api/v1' : 'http://81.68.207.105:3000/api/v1')
+// export const http = new Http(isDev() ? 'api/v1' : 'http://81.68.207.105:3000/api/v1')
+export const http = new Http('http://81.68.207.105:3000/api/v1')
 
 http.instance.interceptors.request.use((config) => {
   const jwt = localStorage.getItem('jwt')
