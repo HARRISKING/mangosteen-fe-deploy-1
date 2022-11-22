@@ -73,7 +73,7 @@ export const TimeTabsLayout = defineComponent({
     return () => (
       <MainLayout>
         {{
-          title: () => '连成记账',
+          title: () => '记账宝',
           icon: () => <OverlayIcon />,
           default: () => (
             <>
